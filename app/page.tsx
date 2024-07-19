@@ -1,5 +1,6 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Page() {
@@ -26,6 +27,20 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
+          <Image 
+          className='hidden md:block'
+          alt=''
+          src='/hero-desktop.png'
+          width={1000}
+          height={760}
+          />
+          <Image 
+          className='block md:hidden'
+          alt=''
+          src='/hero-mobile.png'
+          width={560}
+          height={620}
+          />
         </div>
       </div>
     </main>
